@@ -1,0 +1,47 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["@typescript-eslint", "unused-imports", "prettier"],
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"]
+    }
+  ],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "max-len": [
+      "warn",
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "eqeqeq": ["warn", "smart"],
+    "semi": ["error", "never"],
+    "strict": "error",
+    "prefer-destructuring": "error",
+    "unused-imports/no-unused-imports": "warn",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1
+      }
+    ],
+    "space-in-parens": ["error", "never"],
+    // "array-bracket-spacing": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error"
+  }
+}
