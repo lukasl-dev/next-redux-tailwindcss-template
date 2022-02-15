@@ -1,6 +1,10 @@
 {
-  "name": "web",
+  "name": "next-template",
   "private": true,
+  "author": {
+    "name": "lukasl-dev",
+    "url": "https://github.com/lukasl-dev/next-template"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
