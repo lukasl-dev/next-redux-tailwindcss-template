@@ -1,6 +1,6 @@
 {
-    "*.ts": "eslint --fix",
-    "*.tsx": "eslint --fix",
-    "*.js": "eslint --fix",
-    "*.jsx": "eslint --fix"
+    "*.ts": "npx eslint --fix",
+    "*.tsx": "npx eslint --fix",
+    "*.js": "npx eslint --fix",
+    "*.jsx": "npx eslint --fix"
 }
