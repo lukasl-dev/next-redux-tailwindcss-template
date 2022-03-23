@@ -1,6 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
-  "plugins": ["@typescript-eslint", "unused-imports", "prettier"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": ["next/core-web-vitals", "react", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "unused-imports"],
+  "parser": "@typescript-eslint/parser",
   "root": true,
   "overrides": [
     {
@@ -39,9 +46,26 @@
       }
     ],
     "space-in-parens": ["error", "never"],
-    // "array-bracket-spacing": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
-    "@typescript-eslint/explicit-function-return-type": "error",
-    "@typescript-eslint/explicit-module-boundary-types": "error"
+    "no-console": "warn",
+    "no-use-before-define": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "react/prop-types": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "ignoreCase": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": ["key", "ref"]
+      }
+    ]
   }
 }
