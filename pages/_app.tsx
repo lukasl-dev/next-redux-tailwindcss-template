@@ -1,8 +1,11 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import React from 'react'
+import { NextPage } from 'next'
+import { AppProps } from 'next/app'
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default App
