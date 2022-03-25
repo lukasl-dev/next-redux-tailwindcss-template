@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import React from 'react'
 import { NextPage } from 'next'
 import { AppProps } from 'next/app'
