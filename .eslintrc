@@ -49,6 +49,7 @@
     "object-curly-spacing": ["error", "always"],
     "no-console": "warn",
     "no-use-before-define": "off",
+    "func-style": ["error", "expression"],
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
@@ -66,6 +67,7 @@
         "noSortAlphabetically": false,
         "reservedFirst": ["key", "ref"]
       }
-    ]
+    ],
+    "react/destructuring-assignment": ["error", "always"]
   }
 }
